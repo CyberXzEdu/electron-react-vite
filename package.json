@@ -1,0 +1,42 @@
+{
+  "name": "vite-electron-template",
+  "version": "1.0.0",
+  "main": "dist-electron/index.js",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://localhost:5555/"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "preview": "vite preview",
+    "e2e": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.29.2",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "@vitejs/plugin-react": "^3.0.1",
+    "electron": "^22.0.3",
+    "electron-builder": "^23.6.0",
+    "eslint-plugin-react": "^7.32.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "vite-electron-plugin": "^0.7.4",
+    "vite-plugin-electron-renderer": "^0.11.4",
+    "eslint": "^8.33.0"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  }
+}
