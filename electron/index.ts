@@ -61,7 +61,7 @@ ipcMain.handle("create-new-window", (_, code) => {
     }
   });
 
-  if (process.env.VITE_DEV_SERVER_URL) childWindow.loadURL(`${url}#${code}`);
+  if (process.env.VITE_DEV_SERVER_URL) childWindow.loadURL(`${url}#/${code}`);
   
   else childWindow.loadFile(indexHtml, { hash: code });
   
